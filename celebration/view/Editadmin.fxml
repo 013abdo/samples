@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Users.UpdateAdmin">
+   <children>
+      <GridPane gridLinesVisible="false" layoutX="26.0" layoutY="72.0" prefHeight="454.0" prefWidth="649.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="125.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="92.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="134.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ID" GridPane.columnIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label text="name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label text="User type:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label text="phone" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label text="address" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <TextField fx:id="user_idfield" GridPane.columnIndex="2" />
+            <TextField fx:id="namefield" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="phonefield" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="addressfield" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label text="shop" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <TextField fx:id="shopfield" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <RadioButton fx:id="Adm" mnemonicParsing="false" selected="true" text="Adm" GridPane.rowIndex="3">
+               <toggleGroup>
+                  <ToggleGroup fx:id="position" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Emp" mnemonicParsing="false" text="Emp" toggleGroup="$position" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <RadioButton fx:id="wor" mnemonicParsing="false" text="Wor" toggleGroup="$position" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <RadioButton fx:id="deli" mnemonicParsing="false" text="Deli" toggleGroup="$position" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="191.0" layoutY="14.0" text="Edit User Information">
+         <font>
+            <Font size="34.0" />
+         </font></Label>
+      <ButtonBar layoutX="250.0" layoutY="546.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#ok" text="Save" />
+            <Button mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

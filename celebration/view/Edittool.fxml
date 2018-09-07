@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tools.Updatetool">
+   <children>
+      <GridPane gridLinesVisible="false" layoutX="37.0" layoutY="87.0" prefHeight="227.0" prefWidth="419.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="id">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label text="name" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="type" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="cost" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="shop " GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="address" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="tool_numfield" GridPane.columnIndex="1" />
+            <TextField fx:id="tool_namefield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="quantityfield" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="costfield" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Quantity" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="addressfield" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ComboBox fx:id="box" prefWidth="150.0" GridPane.columnIndex="1" promptText="select type of the tool" GridPane.rowIndex="2" />
+            <ChoiceBox fx:id="mark" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Label layoutX="109.0" layoutY="14.0" text="Update Tool details">
+         <font>
+            <Font size="32.0" />
+         </font></Label>
+      <ButtonBar layoutX="156.0" layoutY="346.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#ok" text="Save" />
+            <Button mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

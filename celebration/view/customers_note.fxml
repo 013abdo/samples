@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+   <children>
+      <SplitPane dividerPositions="0.2581453634085213" layoutX="200.0" layoutY="123.0" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView prefHeight="474.0" prefWidth="201.0">
+                    <columns>
+                      <TableColumn prefWidth="96.0" text="customer_name" />
+                      <TableColumn prefWidth="103.0" text="bill_num" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <GridPane layoutX="3.0" layoutY="78.0" prefHeight="463.0" prefWidth="585.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="129.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="148.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="153.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Bill_num" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Bill_date" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tool_name" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="60.0" text="Type" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantity" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Date_from" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Date_until" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="123.0" text="Shop_name" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Insurance" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Customer_name" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Customer_phone" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Cost" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField GridPane.columnIndex="2" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                     </children>
+                  </GridPane>
+                  <ButtonBar layoutX="14.0" layoutY="544.0" prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button mnemonicParsing="false" text="New" />
+                        <Button mnemonicParsing="false" text="Edit" />
+                        <Button mnemonicParsing="false" text="Delete" />
+                        <Button mnemonicParsing="false" text="Back" />
+                        <Button mnemonicParsing="false" text="Print" />
+                    </buttons>
+                  </ButtonBar>
+                  <Label layoutX="89.0" layoutY="8.0" text="Customer Bill Sheet">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

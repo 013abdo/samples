@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="celebration.control.shop">
+   <children>
+      <Label layoutX="324.0" layoutY="14.0" text="Shops Information">
+         <font>
+            <Font name="Arial Italic" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="shoptable" layoutY="79.0" prefHeight="454.0" prefWidth="933.0">
+        <columns>
+          <TableColumn fx:id="shop_numCol" prefWidth="104.0" text="shop_num" />
+          <TableColumn fx:id="shop_nameCol" prefWidth="159.0" text="shop_name" />
+            <TableColumn fx:id="shop_phoneCol" prefWidth="142.0" text="shop_phone" />
+            <TableColumn fx:id="shop_telCol" prefWidth="140.0" text="shop_tel" />
+            <TableColumn fx:id="shop_addressCol" prefWidth="160.0" text="shop_address" />
+            <TableColumn fx:id="shop_cityCol" prefWidth="93.0" text="shop_city" />
+            <TableColumn fx:id="shop_ownerCol" prefWidth="134.0" text="shop_owner" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="292.0" layoutY="546.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+               <Button mnemonicParsing="false" onAction="#newshop" text="New" />
+            <Button mnemonicParsing="false" onAction="#editshop" text="Update" />
+            <Button mnemonicParsing="false" onAction="#back" text="Back" />
+            <Button mnemonicParsing="false" onAction="#deleteshop" text="Delete" />
+        </buttons>
+      </ButtonBar>
+      <TextField fx:id="sortfild" layoutX="175.0" layoutY="55.0" promptText="type to seach/ sort" />
+      <TextField fx:id="deletefild" layoutX="14.0" layoutY="55.0" promptText="search to delete" />
+   </children>
+</AnchorPane>

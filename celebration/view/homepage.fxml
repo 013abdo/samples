@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor" stylesheets="@../../img/shop.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="celebration.control.Home">
+   <children>
+      <Button layoutX="269.0" layoutY="67.0" mnemonicParsing="false" onAction="#Users" styleClass="Users" stylesheets="@../../../img/shop.css" text="Users" />
+      <Button layoutX="421.0" layoutY="135.0" mnemonicParsing="false" onAction="#shop" styleClass="search" text="Shop" />
+      <Button layoutX="118.0" layoutY="135.0" mnemonicParsing="false" onAction="#tool" styleClass="tool" text="TOOL" />
+      <Button layoutX="124.0" layoutY="219.0" mnemonicParsing="false" onAction="#Bill" styleClass="bill" text="BILL" />
+      <Label layoutX="118.0" layoutY="22.0" text="WELLCOME TO OUR SHOP ">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="132.0" layoutY="275.0" prefHeight="53.0" prefWidth="336.0" text="HOW WE CAN  SERVE YOU!!!">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Button layoutX="276.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+      <Button layoutX="395.0" layoutY="219.0" mnemonicParsing="false" onAction="#category" text="Category" />
+      <Button layoutX="252.0" layoutY="168.0" mnemonicParsing="false" onAction="#customer" text="customers" />
+   </children>
+</AnchorPane>
